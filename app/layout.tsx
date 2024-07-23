@@ -1,3 +1,4 @@
+import Aside from '@/components/common/Aside';
 import Header from '@/components/common/Header';
 import { cn } from '@/lib/utils';
 import type { Metadata } from 'next';
@@ -20,7 +21,7 @@ export default function RootLayout({
         className={cn(inter.className, 'container flex min-h-screen flex-col')}
       >
         <Header />
-
+        <Aside />
         <main className="grow bg-[#EDF2F7]">{children}</main>
       </body>
     </html>
