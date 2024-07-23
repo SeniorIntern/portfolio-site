@@ -1,5 +1,6 @@
 import HeroDisplay from '@/components/HeroDisplay';
 import ProjectsDisplay from '@/components/ProjectsDisplay';
+import SkillsDisplay from '@/components/SkillsDisplay';
 import SpecialityDisplay from '@/components/SpecialityDisplay';
 
 export default function Page() {
@@ -8,6 +9,7 @@ export default function Page() {
       <HeroDisplay />
       <SpecialityDisplay />
       <ProjectsDisplay />
+      <SkillsDisplay />
       <footer></footer>
     </section>
   );
