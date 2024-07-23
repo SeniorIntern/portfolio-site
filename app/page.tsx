@@ -1,7 +1,6 @@
 export default function Page() {
   return (
-    <section>
-      <p>hi</p>
+    <section className="space-y-48">
     </section>
   );
 }
