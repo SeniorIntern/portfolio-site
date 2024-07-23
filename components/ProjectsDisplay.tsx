@@ -3,14 +3,14 @@ import Image from 'next/image';
 
 const ProjectsDisplay = () => {
   return (
-    <article className="space-y-6">
+    <article id="projects" className="space-y-6">
       <p className="text-center text-5xl font-semibold">
         Have A Look At <span className="text-blue-800">My Projects</span>
       </p>
 
       <div className="mx-auto grid w-fit grid-cols-3 gap-16">
         {Array.from({ length: 5 }).map((_, idx) => (
-          <div className="rounded-md bg-white px-2 pt-2">
+          <div key={idx} className="rounded-md bg-white px-2 pt-2">
             <div key={idx} className="relative h-36 w-64">
               <Image
                 src={FrontendImage}

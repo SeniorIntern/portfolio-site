@@ -5,7 +5,7 @@ import Image, { StaticImageData } from 'next/image';
 
 const SpecialityDisplay = () => {
   return (
-    <section className="space-y-10">
+    <section id="about" className="space-y-10">
       <article className="text-center text-5xl font-semibold">
         <p>
           I Know That <span className="text-blue-800">Development</span>

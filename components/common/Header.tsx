@@ -8,15 +8,15 @@ const Header = () => {
     },
     {
       label: 'about',
-      href: '/about'
+      href: '#about'
     },
     {
       label: 'projects',
-      href: '/projects'
+      href: '#projects'
     },
     {
       label: 'skills',
-      href: '/skills'
+      href: '#skills'
     }
   ];
 
@@ -34,7 +34,7 @@ const Header = () => {
           <Link
             key={idx}
             href={item.href}
-            className="text-[0.8rem] text-gray-500"
+            className="border-blue-800 text-[0.8rem] text-gray-500 hover:border-t-2 hover:text-blue-800"
           >
             {item.label.toUpperCase()}
           </Link>

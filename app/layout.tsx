@@ -1,4 +1,5 @@
 import Aside from '@/components/common/Aside';
+import GoToControls from '@/components/common/GoToControls';
 import Header from '@/components/common/Header';
 import { cn } from '@/lib/utils';
 import type { Metadata } from 'next';
@@ -22,6 +23,7 @@ export default function RootLayout({
       >
         <Header />
         <Aside />
+        <GoToControls />
         <main className="grow bg-[#EDF2F7]">{children}</main>
       </body>
     </html>

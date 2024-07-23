@@ -155,14 +155,17 @@ const skills = [
 
 const SkillsDisplay = () => {
   return (
-    <article className="space-y-6">
+    <article id="skills" className="space-y-6">
       <p className="text-center text-5xl font-semibold">
         These Are My <span className="text-blue-800">Skills</span>
       </p>
 
       <div className="mx-auto flex w-[80%] flex-wrap justify-center">
         {skills.map((item, idx) => (
-          <div className="m-4 grid size-24 place-items-center rounded-full bg-white">
+          <div
+            key={idx}
+            className="m-4 grid size-24 place-items-center rounded-full bg-white"
+          >
             <div key={idx} className="relative size-14">
               <Image
                 src={item.logo}
