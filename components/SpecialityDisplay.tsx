@@ -1,7 +1,10 @@
+'use client';
+
 import BackendImage from '@/public/about/backend.png';
 import DevopsImage from '@/public/about/devops.png';
 import FrontendImage from '@/public/about/frontend.png';
 import Image, { StaticImageData } from 'next/image';
+import { motion } from 'framer-motion';
 
 const SpecialityDisplay = () => {
   return (
@@ -47,7 +50,12 @@ type Props = {
 
 const SpecialityDisplayCard = ({ image, skill, skillDescription }: Props) => {
   return (
-    <div className="h-fit w-52 space-y-4">
+    <motion.div
+      whileInView={{ opacity: 1 }}
+      whileHover={{ scale: 1.1 }}
+      transition={{ duration: 0.3 }}
+      className="h-fit w-52 space-y-4"
+    >
       <div className="relative h-44 w-full">
         <Image
           src={image}
@@ -60,6 +68,6 @@ const SpecialityDisplayCard = ({ image, skill, skillDescription }: Props) => {
       <p className="text-center font-bold">{skill}</p>
 
       <p className="text-[0.75rem] text-gray-800">{skillDescription}</p>
-    </div>
+    </motion.div>
   );
 };
