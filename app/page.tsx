@@ -5,12 +5,12 @@ import SpecialityDisplay from '@/components/SpecialityDisplay';
 
 export default function Page() {
   return (
-    <section className="space-y-48">
+    <div className="space-y-48">
       <HeroDisplay />
       <SpecialityDisplay />
       <ProjectsDisplay />
       <SkillsDisplay />
       <footer></footer>
-    </section>
+    </div>
   );
 }

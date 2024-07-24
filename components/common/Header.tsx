@@ -1,3 +1,11 @@
+import {
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger
+} from '@/components/ui/sheet';
+import { Menu } from 'lucide-react';
 import Link from 'next/link';
 
 const Header = () => {
@@ -29,7 +37,7 @@ const Header = () => {
         <span className="text-xl font-extrabold">Thapa</span>
       </span>
 
-      <nav className="flex gap-6">
+      <nav className="hidden space-x-6 lg:flex">
         {navOptions.map((item, idx) => (
           <Link
             key={idx}
@@ -40,7 +48,30 @@ const Header = () => {
           </Link>
         ))}
       </nav>
-      <span></span>
+
+      <Sheet>
+        <SheetTrigger className="block rounded-full bg-blue-800 p-1 lg:hidden">
+          <Menu className="text-white" />
+        </SheetTrigger>
+        <SheetContent className="">
+          <SheetHeader>
+            <SheetTitle></SheetTitle>
+          </SheetHeader>
+          <nav className="my-8 flex flex-col gap-4">
+            {navOptions.map((item, idx) => (
+              <Link
+                key={idx}
+                href={item.href}
+                className="font-[400] text-gray-500 hover:text-blue-800"
+              >
+                {item.label.toUpperCase()}
+              </Link>
+            ))}
+          </nav>
+        </SheetContent>
+      </Sheet>
+
+      <span className='lg:inline hidden'></span>
     </header>
   );
 };

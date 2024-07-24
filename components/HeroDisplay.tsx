@@ -14,23 +14,25 @@ const HeroDisplay = () => {
   };
 
   return (
-    <div className="relative mx-auto mt-32 w-fit">
+    <section className="relative mx-auto mt-32 w-fit">
       <motion.div
         whileInView={{ opacity: [0, 1] }}
         transition={{ duration: 0.5, delayChildren: 0.3 }}
-        className="relative size-96"
+        className="relative top-20 size-96 lg:top-0"
       >
         <Image
           src={ProfileImage}
+          priority={true}
           alt="Profile image"
           fill
+          sizes="30vw"
           style={ImageGradientBg}
           className="rounded-full object-cover"
         />
       </motion.div>
       <HeroFloatingSkills />
       <HeroFloatingIntro />
-    </div>
+    </section>
   );
 };
 

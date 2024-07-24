@@ -20,27 +20,29 @@ const HeroFloatingSkills = () => {
     <motion.div
       variants={scaleVariants}
       whileInView={scaleVariants.whileInView}
-      className="absolute -right-44 -top-16 flex flex-col gap-20"
+      className="absolute -right-10 top-[32rem] flex gap-14 md:gap-20 lg:-right-48 lg:-top-14 lg:flex-col"
     >
-      <div className="relative size-24">
+      <div className="grid size-24 place-items-center rounded-full bg-white">
         <Image
           src={TsImage}
           alt="Profile image"
-          className="size-full rounded-full object-cover"
+          className="size-14 rounded-md"
         />
       </div>
-      <div className="relative size-28">
+
+      <div className="grid size-36 place-items-center rounded-full bg-white">
         <Image
           src={NextJsImage}
           alt="Profile image"
-          className="size-full rounded-full object-cover"
+          className="size-24 rounded-md"
         />
       </div>
-      <div className="relative size-20">
+
+      <div className="grid size-24 place-items-center rounded-full bg-white">
         <Image
           src={NestJsImage}
           alt="Profile image"
-          className="size-full rounded-full object-cover"
+          className="size-16 rounded-md"
         />
       </div>
     </motion.div>

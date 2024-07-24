@@ -3,37 +3,36 @@
 import BackendImage from '@/public/about/backend.png';
 import DevopsImage from '@/public/about/devops.png';
 import FrontendImage from '@/public/about/frontend.png';
-import Image, { StaticImageData } from 'next/image';
 import { motion } from 'framer-motion';
+import Image, { StaticImageData } from 'next/image';
 
 const SpecialityDisplay = () => {
   return (
     <section id="about" className="space-y-10">
       <article className="text-center text-5xl font-semibold">
-        <p>
+        <h2>
           I Know That <span className="text-blue-800">Development</span>
-        </p>
-
-        <p>
+          <br/>
           Means <span className="text-blue-800">Good Business</span>
-        </p>
+        </h2>
       </article>
 
-      <article className="mx-auto grid w-fit grid-cols-3 gap-14">
+      <article className="mx-auto grid w-fit grid-cols-1 gap-14 md:grid-cols-2 lg:grid-cols-3">
         <SpecialityDisplayCard
           image={FrontendImage}
-          skill="frontend Developer"
+          skill="Frontend Developer"
           skillDescription="I am proficient in designing visually appealing web websites."
         />
         <SpecialityDisplayCard
           image={BackendImage}
-          skill="frontend Developer"
-          skillDescription="I am proficient in designing visually appealing web designs that scales."
+          skill="Backend Developer"
+          skillDescription="
+I excel in building robust and scalable server-side applications."
         />
         <SpecialityDisplayCard
           image={DevopsImage}
           skill="DevOps"
-          skillDescription="I am proficient in designing visually appealing web designs that scales."
+          skillDescription="I specialize in managing cloud infra for seamless CI/CD  and ops."
         />
       </article>
     </section>
@@ -58,16 +57,18 @@ const SpecialityDisplayCard = ({ image, skill, skillDescription }: Props) => {
     >
       <div className="relative h-44 w-full">
         <Image
+          fill
+          sizes="20vw"
           src={image}
           alt="skill image"
-          fill
           className="rounded-md object-cover"
         />
       </div>
 
-      <p className="text-center font-bold">{skill}</p>
-
-      <p className="text-[0.75rem] text-gray-800">{skillDescription}</p>
+      <div className="text-center">
+        <p className="font-bold">{skill}</p>
+        <p className="text-[0.75rem] text-gray-800">{skillDescription}</p>
+      </div>
     </motion.div>
   );
 };

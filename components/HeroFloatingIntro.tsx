@@ -7,24 +7,27 @@ const HeroFloatingIntro = () => {
     <motion.div
       whileInView={{ x: [-100, 0], opacity: [0, 1] }}
       transition={{ duration: 0.5 }}
+      className="relative -top-[32rem] mt-3 ml-3 sm:-left-32 md:-left-40 md:mt-8 lg:-left-72 lg:-top-16"
     >
-      <div className="absolute -bottom-24 -left-[70%] space-y-4">
-        <div className="flex items-center gap-6 rounded-md px-4 py-5 shadow">
+      <div className="space-y-4">
+        <div className="flex w-fit items-center gap-6 rounded-md px-4 py-5 shadow-lg">
           <div className="relative size-12">
             <Image
+              fill
               src={Wavinghand}
               alt="Profile image"
-              fill
               className="rounded-full object-cover"
             />
           </div>
-          <div>
-            <p className="text-sm text-gray-400">Hello, I am</p>
-            <p className="text-2xl font-extrabold">Nikhil Thapa</p>
+          <div className="w-fit">
+            <span className="inline-block text-sm text-gray-400">
+              Hello, I am
+            </span>
+            <h1 className="space-x-1 text-2xl font-extrabold">Nikhil Thapa</h1>
           </div>
         </div>
 
-        <div className="w-fit rounded-md px-4 py-5 shadow">
+        <div className="w-fit rounded-md px-4 py-5 shadow-lg">
           <p className="text-sm">Student</p>
           <p className="text-sm">FullStack Developer</p>
         </div>
