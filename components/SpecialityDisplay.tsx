@@ -21,7 +21,7 @@ const SpecialityDisplay = () => {
         <SpecialityDisplayCard
           image={FrontendImage}
           skill="Frontend Developer"
-          skillDescription="I am proficient in designing visually appealing web websites."
+          skillDescription="I am proficient in designing visually appealing websites."
         />
         <SpecialityDisplayCard
           image={BackendImage}
