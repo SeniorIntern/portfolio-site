@@ -1,9 +1,6 @@
 import React from 'react';
 import { ImageResponse } from 'next/og';
 
-// Route segment config
-export const runtime = 'edge';
-
 // Image metadata
 export const size = {
   width: 32,
