@@ -29,7 +29,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="flex items-center justify-between bg-[#F2F6F9] px-4 py-4">
+    <header className="flex items-center justify-between bg-[#F2F6F9] px-4 py-4 shadow-black drop-shadow-md">
       <span className="space-x-1">
         <span className="rounded-md border-4 border-blue-800 p-2 text-xl font-extrabold text-blue-800">
           Nikhil
@@ -50,7 +50,10 @@ const Header = () => {
       </nav>
 
       <Sheet>
-        <SheetTrigger className="block rounded-full bg-blue-800 p-1 lg:hidden">
+        <SheetTrigger
+          aria-label="open navbar"
+          className="block rounded-full bg-blue-800 p-1 lg:hidden"
+        >
           <Menu className="text-white" />
         </SheetTrigger>
         <SheetContent className="">
@@ -71,7 +74,7 @@ const Header = () => {
         </SheetContent>
       </Sheet>
 
-      <span className='lg:inline hidden'></span>
+      <span className="hidden lg:inline"></span>
     </header>
   );
 };

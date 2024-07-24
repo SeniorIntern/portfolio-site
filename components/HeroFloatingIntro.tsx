@@ -19,7 +19,7 @@ const HeroFloatingIntro = () => {
               className="rounded-full object-cover"
             />
           </div>
-          <div className="w-fit">
+          <div className="w-fit opacity-95">
             <span className="inline-block text-sm text-gray-400">
               Hello, I am
             </span>
@@ -27,7 +27,7 @@ const HeroFloatingIntro = () => {
           </div>
         </div>
 
-        <div className="w-fit rounded-md px-4 py-5 shadow-lg">
+        <div className="w-fit rounded-md px-4 py-5 opacity-90 shadow-lg">
           <p className="text-sm">Student</p>
           <p className="text-sm">FullStack Developer</p>
         </div>
