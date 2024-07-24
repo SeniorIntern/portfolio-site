@@ -1,3 +1,5 @@
+import Aside from '@/components/common/Aside';
+import GoToControls from '@/components/common/GoToControls';
 import Header from '@/components/common/Header';
 import { siteConfig } from '@/config/site';
 import { cn } from '@/lib/utils';
@@ -66,6 +68,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cn(GeistSans.className, 'flex justify-center')}>
+        <Aside />
+        <GoToControls />
         <div className="container flex min-h-screen flex-col">
           <Header />
           <main className="grow bg-[#EDF2F7]">{children}</main>
