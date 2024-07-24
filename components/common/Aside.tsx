@@ -11,7 +11,6 @@ const Aside = () => {
       >
         <Twitter className="size-4" />
       </Link>
-
       <Link
         target="_blank"
         href={'https://github.com/seniorIntern'}
@@ -19,7 +18,6 @@ const Aside = () => {
       >
         <Github />
       </Link>
-
       <Link
         target="_blank"
         href={'https://www.linkedin.com/in/nikhildotjs/'}

@@ -25,6 +25,10 @@ const Header = () => {
     {
       label: 'skills',
       href: '#skills'
+    },
+    {
+      label: 'resume',
+      href: 'https://drive.google.com/file/d/1J_t14H6WnWY9P4Tb0A8m5xbHTJtquH_B/view'
     }
   ];
 
@@ -43,18 +47,11 @@ const Header = () => {
             key={idx}
             href={item.href}
             className="border-blue-800 text-[0.8rem] text-gray-500 hover:border-t-2 hover:text-blue-800"
+            target={item.label === 'resume' ? '_blank' : '_self'}
           >
             {item.label.toUpperCase()}
           </Link>
         ))}
-        <a
-          download
-          className="border-blue-800 text-[0.8rem] text-gray-500 hover:border-t-2 hover:text-blue-800"
-          href="../../public/NikhilThapa_Resume.pdf"
-          target="_blank"
-        >
-          RESUME
-        </a>
       </nav>
 
       <Sheet>
