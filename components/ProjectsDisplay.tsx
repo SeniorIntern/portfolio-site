@@ -1,9 +1,8 @@
 'use client';
 
-import FrontendImage from '@/public/about/frontend.png';
+import AiSaasProjectImage from '@/public/projects/ai-saas.png';
 import EcommerceProjectImage from '@/public/projects/ecommerce.png';
-import GameDiscoveryProjectImage from '@/public/projects/game-hub.png';
-import IssueTrackerProjectImage from '@/public/projects/issue-tracker.png';
+import ReservationPlatformProjectImage from '@/public/projects/reservation-platform.png';
 import SocialMediaProjectImage from '@/public/projects/social-media.png';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
@@ -11,29 +10,24 @@ import { useRouter } from 'next/navigation';
 
 const projects = [
   {
-    name: 'Game Disovery',
-    image: GameDiscoveryProjectImage,
-    href: 'https://github.com/SeniorIntern/game-hub-react'
-  },
-  {
-    name: 'TwitMatchPlay',
+    name: 'Social Media',
     image: SocialMediaProjectImage,
-    href: 'https://github.com/SeniorIntern/TwitMatchPlay-client'
+    href: 'https://github.com/SeniorIntern/Social-Media'
   },
   {
     name: 'Ecommerce',
     image: EcommerceProjectImage,
-    href: 'https://github.com/SeniorIntern/ecommerce-front'
+    href: 'https://github.com/SeniorIntern/ecommerce'
   },
   {
-    name: 'Issue Tracker',
-    image: IssueTrackerProjectImage,
-    href: 'https://github.com/SeniorIntern/issue-tracker'
+    name: 'Reservation System',
+    image: ReservationPlatformProjectImage,
+    href: 'https://github.com/SeniorIntern/Reservation-System'
   },
   {
-    name: 'Movie Rental IMS',
-    image: FrontendImage,
-    href: 'https://github.com/SeniorIntern/movie-store-api'
+    name: 'SAAS AI',
+    image: AiSaasProjectImage,
+    href: 'https://github.com/SeniorIntern/SAAS-AI'
   }
 ];
 
