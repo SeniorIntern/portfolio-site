@@ -12,22 +12,22 @@ const projects = [
   {
     name: 'Social Media',
     image: SocialMediaProjectImage,
-    href: 'https://github.com/SeniorIntern/Social-Media'
+    href: 'https://twitmedia.vercel.app/'
   },
   {
     name: 'Ecommerce',
     image: EcommerceProjectImage,
-    href: 'https://github.com/SeniorIntern/ecommerce'
+    href: 'https://ecommerce-indol-kappa.vercel.app/'
   },
   {
     name: 'Reservation System',
     image: ReservationPlatformProjectImage,
-    href: 'https://github.com/SeniorIntern/Reservation-System'
+    href: 'https://reservation-system-seven.vercel.app/'
   },
   {
     name: 'SAAS AI',
     image: AiSaasProjectImage,
-    href: 'https://github.com/SeniorIntern/SAAS-AI'
+    href: 'https://saas-ai-seven-phi.vercel.app/'
   }
 ];
 
