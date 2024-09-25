@@ -28,7 +28,7 @@ const Header = () => {
     },
     {
       label: 'resume',
-      href: 'https://drive.google.com/file/d/14lsVT2Ebxr6NAcYsoccpQ-KOThCC-Del/view?usp=sharing'
+      href: 'https://drive.google.com/file/d/1qdEVeFaylTIYlY08v-qXGbRl2wdbAWUY/view?usp=sharing'
     }
   ];
 
